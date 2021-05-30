@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <title>Forms</title>
+        <style>
+            div>h1{
+                text-align: center;
+                color: rgb(251, 250, 252);
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-weight: 300;
+                padding: 30px;
+            }
+            #foo{
+                width: 600px;
+                height: 50px;
+                margin-left: 375px;
+                margin-top:5px;
+                text-align: center;
+                font-weight: bolder;
+                background-color: rgb(248, 247, 247);
+                
+            }
+            .boo{
+                padding-left: 20px;
+                padding-top: 30px;
+                background-color: rgb(250, 216, 129);
+            }
+            input[type=text]{
+                width: 180px;
+                height: 28px;
+                background-color: honeydew;
+                border: rgb(90, 28, 235);
+                border-radius: 10px;
+                margin:9px;
+                transition: 1s;
+            }
+            input[type=text]:focus{
+                border: 3px solid #555
+            }
+            but:focus{
+                background-color: greenyellow;
+                border: indigo;
+                border-radius: 10px;
+                transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+            }
+            td{
+                width:150px;
+                height: 70px;
+                background-color: lightseagreen;
+                margin:10px;
+                padding:50px;
+                padding-left: 80px;
+            }
+            tr{
+                margin:40px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div style="background-color: rgb(22, 110, 243); height: 100px;">
+            <h1>PANIMALAR ENGINEERING COLLEGE</h2>
+        </div>
+        <div class="boo"> 
+            <label for="fname" style="font-weight: bold; font-size: 24px; padding-left: 80px;">First Name : </label>
+            <input id="fname" type="text" placeholder="First Name" name="name">
+            <label for="lname" style="font-size: 24px; font-weight: bold; padding-left: 220px;">Last Name : </label>
+            <input id="lname" type="text" placeholder="Last Name" name="l_name"><br><br>
+            <label for="reg" style="font-size: 24px; font-weight: bold; padding-left: 80px;">Roll No. : </label>
+            <input id="reg" type="text" placeholder="Roll no." name="reg">
+            <label for="dept" style="font-size: 24px; font-weight: bold; padding-left: 250px;">Department : </label>
+            <input id="dept" type="text" placeholder="Dept" name="dept">
+        </div><br>
+        <div style="background-color: midnightblue; height:60px;">
+            <input id="foo" name="comp" list="Competitions" placeholder="Competitions">
+            <datalist id="Competitions">
+                <option value="Coding">
+                <option value="Designing">
+                <option value="Quiz">
+            </datalist>
+        </div><br>
+        <div>
+            <label style="font-weight: bolder; margin-left: 550px;">Click Here to Submit </label><br><br>
+            <button id="but" type="submit" value="Submit" style="width: 300px; height: 40px; background-color: green; margin-left: 500px;">Submit</button>
+        </div>
+        <div>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>!st Prize</td>
+                        <td>2nd Prize</td>
+                        <td>3rd Prize</td>
+                    </tr>
+                    <tr>
+                        <td>1,00,000/-</td>
+                        <td>50,000/-</td>
+                        <td>25,000/-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div> 
+    </body>
+</html>
